@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="./response.html" target="_blank" name="Biodata" method="">
+        <fieldset>
+            <legend>Biodata</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            <lable for="dob">DOB</lable>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="tel">Phone:</label>
+            <input type="tel" id="tel" name="tel" placeholder="Enter your phone number" required>
+            <br><br>
+            <label for="attempt">Attempt:</label>
+            <input type="number" id="attempt" name="attempt" min="1" max="5" required>
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <lable for="male">Male</lable>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <lable for="female">Female</lable>
+            <input type="radio" id="Transgender" name="gender" value="Transgender" required>
+            <lable for="Transgender">Walmart Bag</lable>
+            <br><br>
+            <label for="checkbox">Vehicles You Have</label>
+            <input type="checkbox" id="bike" name="vehicle 1" value="Bike">
+            <lable for="bike">Bike</lable>
+            <input type="checkbox" id="car" name="vehicle 2" value="Car">
+            <lable for="car">Car</lable>
+            <br><br>
+            <lable for="lang">Select your Programming languages</lable>
+            <select id="lang" name="lang">
+                <option value="none" selected disabled>Select an option</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <br><br>
+            <lable for="password">Password:</lable>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            <lable for="appointment">Select your Appointment Time:</lable>
+            <input type="time" id="appointment" name="appointment" required>
+            <br><br>
+            <lable for="file upload">Upload your file:</lable>
+            <input type="file" id="file upload" name="file upload" required>
+            <br><br>
+            <lable for="address">Address:</lable   >
+            <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address" required></textarea> 
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Click Me!" onclick="alert('Hello! I am an alert box!')">
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
